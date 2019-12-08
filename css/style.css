@@ -1,0 +1,40 @@
+@import url();
+
+html body{
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    width: 100%;
+    background-image: url(/assets/backgrounds/h_img.jpg);
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.aboutus{
+    text-align: center;
+}
+.services{
+    background-image: url(/assets/backgrounds/s_image.jpg);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+.whatwedo{
+    text-align: center;
+    text-transform: uppercase;
+}
+.column{
+    float: left;
+    width: 31%;
+    padding: 0%;
+    margin-top: 5%;
+}
+.column::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.show-hidden{
+    display: none;
+}
