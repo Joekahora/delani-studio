@@ -1,11 +1,12 @@
 @import url();
 
-html body{
+html, body{
     height: 100%;
     width: 100%;
 }
 .logo{
     width: 100%;
+    height: 100%;
     background-image: url(/assets/backgrounds/h_img.jpg);
     text-transform: uppercase;
     text-align: center;
@@ -37,4 +38,53 @@ html body{
 }
 .show-hidden{
     display: none;
+}
+.portofolio{
+    text-align: center;
+    text-transform: uppercase;
+}
+.portoimage{
+    float: left;
+}
+.portoimage::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.contactform{
+    background-image: url(/assets/backgrounds/c_image.jpg);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 5px;
+}
+#formname{
+    background: none;    
+}
+#formname::placeholder{
+    color: #fff;
+}
+#email{
+    background: none;   
+}
+#email::placeholder{
+    color: #fff;
+}
+#textarea{
+    background: none;    
+}
+#textarea::placeholder{
+    color: #fff;
+}
+.footer{
+    padding-top: 50px;
+}
+.footer p{
+    text-align: center;
+    padding-left: 195px;
+}
+.socialmediaicons{
+    padding-left: 300px;
 }
