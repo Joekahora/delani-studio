@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $(".design").click(function(){
+        $(".showing").toggle();
+        $(".show-hidden").toggle();
+    });
+    $(".development").click(function(){
+        $(".dev-showing").toggle();
+        $(".dev-show-hidden").toggle();
+    });
+    $(".productmanagement").click(function(){
+        $(".pro-showing").toggle();
+        $(".pro-show-hidden").toggle();
+    });
+});
