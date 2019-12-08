@@ -11,6 +11,13 @@ html, body{
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    padding: 10%;
+}
+.logo img{
+    padding: 5px;
+}
+.mousepointer{
+    padding-top: 10%;
 }
 .aboutus{
     text-align: center;
@@ -20,6 +27,7 @@ html, body{
     text-align: center;
     color: #fff;
     width: 100%;
+    padding: 10%;
 }
 .whatwedo{
     text-align: center;
@@ -45,6 +53,7 @@ html, body{
 }
 .portoimage{
     float: left;
+    width: 25%;
 }
 .portoimage::after{
     content: "";
@@ -58,7 +67,7 @@ html, body{
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin: 5px;
+    padding: 10%;
 }
 #formname{
     background: none;    
