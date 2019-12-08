@@ -5,6 +5,7 @@ html body{
     width: 100%;
 }
 .logo{
+    width: 100%;
     background-image: url(/assets/backgrounds/h_img.jpg);
     text-transform: uppercase;
     text-align: center;
@@ -17,4 +18,15 @@ html body{
     background-image: url(/assets/backgrounds/s_image.jpg);
     text-align: center;
     color: #fff;
+    width: 100%;
+}
+.column{
+    float: left;
+    width: 31%;
+    padding: 5px;
+}
+.column::after{
+    content: "";
+    clear: both;
+    display: table;
 }
