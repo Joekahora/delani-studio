@@ -62,9 +62,7 @@ html, body{
 }
 .portoimage{
     float: left;
-    width: 25%;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 1.5%;
 }
 .portoimage::after{
     content: "";
@@ -82,18 +80,21 @@ html, body{
     padding: 10%;
 }
 #formname{
-    background: none;    
+    background: none; 
+    width: 30%;   
 }
 #formname::placeholder{
     color: #fff;
 }
 #email{
+    width: 50%;
     background: none;   
 }
 #email::placeholder{
     color: #fff;
 }
 #textarea{
+    margin-top: 5%;
     background: none;    
 }
 #textarea::placeholder{
