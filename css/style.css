@@ -96,7 +96,7 @@ html, body{
     color: #fff;
 }
 #textarea{
-    margin-top: 10%;
+    margin-top: 5%;
     background: none;    
 }
 #textarea::placeholder{
