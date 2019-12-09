@@ -22,6 +22,8 @@ $(document).ready(function(){
 });  
 $(document).ready(function (){
     $(".portoimage").hover(function(){
-        
+        $(this).css("opacity", "0.2");
+    }, function(){
+        $(this).css("opacity", "1");
     })
 })

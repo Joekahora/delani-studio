@@ -55,7 +55,7 @@
         <!-- What we do section -->
         <h1 class="whatwedo">What We do</h1>
         <div class="row">
-            <div class="column">
+            <div class="column col-md-4">
                 <div class="design">
                     <img class="showing" src="assets/services_icons/design_icon.png">
                     <h1>DESIGN</h1>
@@ -66,7 +66,7 @@
                     </p>
                 </div>
             </div>
-            <div class="column">
+            <div class="column col-md-4">
                 <div class="development">
                     <img class="dev-showing" src="assets/services_icons/dev_icon.png">
                     <h1>DEVELOPMENT</h1>
@@ -78,7 +78,7 @@
                     </p>
                 </div>
             </div>
-            <div class="column">
+            <div class="column col-md-4">
                 <div class="productmanagement">
                     <img class="pro-showing" src="assets/services_icons/product_icon.png">
                     <h1>PRODUCT MANAGEMENT</h1>
@@ -129,14 +129,29 @@
         <div class="row">
             <div class="contactform" >
                 <h1>Contact us</h1>
-                <form class="myform" name="myform" onsubmit="return formSubmit()">
-                    <input id="formname" name="formname" type="text" placeholder="Name">
-                    <input id="email" name="email" type="text" placeholder="Email"><br>
+                <form class="myform" name="myform" onsubmit="formSubmit()">
+                    <input id="formname" name="name" type="text" placeholder="Name">
+                    <input id="email" name="mail" type="text" placeholder="Email" ><br>
                     <textarea name="textarea" id="textarea" cols="100" rows="10" placeholder="Your message Here .."></textarea><br>
-                    <input type="button" value="Submit">
+                    <input type="submit" value="Submit">
                 </form> 
             </div>
         </div>
+        <script>
+            function formSubmit(){
+                var nameInput = document.forms["myform"]["name"].value;
+                if(nameInput == ""){
+                    alert("Fill In your Name");
+                    event.preventDefault()
+                    return;
+                }
+               else{
+                 alert(nameInput+" we have received your message. Thank you for reaching out to us.");
+                 event.preventDefault();
+                 return;
+                }                
+            }
+        </script>
         <!-- footer -->
         <div class="row">
             <div class="footer">
