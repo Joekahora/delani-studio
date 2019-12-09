@@ -82,18 +82,21 @@ html, body{
     padding: 10%;
 }
 #formname{
-    background: none;    
+    background: none; 
+    width: 30%;   
 }
 #formname::placeholder{
     color: #fff;
 }
 #email{
+    width: 50%;
     background: none;   
 }
 #email::placeholder{
     color: #fff;
 }
 #textarea{
+    margin-top: 10%;
     background: none;    
 }
 #textarea::placeholder{
