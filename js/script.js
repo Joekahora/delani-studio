@@ -3,12 +3,27 @@ $(document).ready(function(){
         $(".showing").toggle();
         $(".show-hidden").toggle();
     });
-    $(".development").click(function(){
+    event.preventDefault();
+    
+});
+$(document).ready(function(){
+    $(".development").click(function () {
         $(".dev-showing").toggle();
         $(".dev-show-hidden").toggle();
     });
-    $(".productmanagement").click(function(){
-        $(".pro-showing").toggle();
+    event.preventDefault()
+});
+$(document).ready(function(){
+    $(".productmanagement").click(function () {
+        $("img.pro-showing").toggle();
         $(".pro-show-hidden").toggle();
     });
-});
+    event.preventDefault();
+});  
+$(document).ready(function (){
+    $(".portoimage").hover(function(){
+        $(this).css("opacity", "0.2");
+    }, function(){
+        $(this).css("opacity", "1");
+    })
+})

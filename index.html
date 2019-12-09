@@ -55,37 +55,40 @@
         <!-- What we do section -->
         <h1 class="whatwedo">What We do</h1>
         <div class="row">
-                <div class="column">
-                    <div class="design">
-                        <img class="showing" src="assets/services_icons/design_icon.png">
-                        <h1>DESIGN</h1>
-                        <p class="show-hidden">Our designs practice offers a full range of services include brand strategy, 
-                            interaction and visual design and user experience testing.                        
-                         Throughout your project, our designers create and implement visual design and workflows
-                            solicits users feedback and work with you to make sure what gets built is needed.
-                        </p>
-                    </div>
+            <div class="column col-md-4">
+                <div class="design">
+                    <img class="showing" src="assets/services_icons/design_icon.png">
+                    <h1>DESIGN</h1>
+                    <p class="show-hidden">Our designs practice offers a full range of services include brand strategy,
+                        interaction and visual design and user experience testing.
+                        Throughout your project, our designers create and implement visual design and workflows
+                        solicits users feedback and work with you to make sure what gets built is needed.
+                    </p>
                 </div>
-                <div class="column">
-                    <div class="development">
-                        <img class="dev-showing" src="assets/services_icons/dev_icon.png">
-                        <h1>DEVELOPMENT</h1>
-                        <p class="dev-show-hidden">All our engineers are fluent in the latest enterprise, mobile and web technologies.
-                        They collaborate with your team to write, and improve code on a daily basis, using proven practices such as 
-                            test-driven development and pair programming.
-                        </p>
-                    </div>
+            </div>
+            <div class="column col-md-4">
+                <div class="development">
+                    <img class="dev-showing" src="assets/services_icons/dev_icon.png">
+                    <h1>DEVELOPMENT</h1>
+                    <p class="dev-show-hidden">All our engineers are fluent in the latest enterprise, mobile and web
+                        technologies.
+                        They collaborate with your team to write, and improve code on a daily basis, using proven
+                        practices such as
+                        test-driven development and pair programming.
+                    </p>
                 </div>
-                <div class="column">
-                    <div class="productmanagement">
-                        <img class="pro-showing" src="assets/services_icons/product_icon.png">
-                        <h1>PRODUCT MANAGEMENT</h1>
-                        <p class="pro-show-hidden">
-                            Planning and development is iterative. Because we are constantly coding and testing, the products we build
-                            are always ready to go live.                     
-                            This iterative process allows for changes as business requirements evolve</p>
-                    </div>
-                </div>                
+            </div>
+            <div class="column col-md-4">
+                <div class="productmanagement">
+                    <img class="pro-showing" src="assets/services_icons/product_icon.png">
+                    <h1>PRODUCT MANAGEMENT</h1>
+                    <p class="pro-show-hidden">
+                        Planning and development is iterative. Because we are constantly coding and testing, the
+                        products we build
+                        are always ready to go live.
+                        This iterative process allows for changes as business requirements evolve</p>
+                </div>
+            </div>
         </div>
         <!-- Portofolio Section -->
         <div class="portofolio">
@@ -94,6 +97,11 @@
         <div class="row">
             <div class="portoimage">
                 <img src="assets/portfolio/work4.jpg">
+                <div class="overlay">
+                    <div class="text">
+                        <p>blank</p>
+                    </div>
+                </div>
             </div>
             <div class="portoimage">
                 <img src="assets/portfolio/work3.jpg">
@@ -119,16 +127,31 @@
         </div>
         <!-- Contact Form -->
         <div class="row">
-            <div class="contactform">
+            <div class="contactform" >
                 <h1>Contact us</h1>
-                <form>
-                    <input id="formname" type="text" placeholder="Name">
-                    <input id="email" type="text" placeholder="Email"><br>
-                    <textarea name="textarea" id="textarea" cols="100" rows="10" placeholder="Your message Here .."></textarea>
+                <form class="myform" name="myform" onsubmit="formSubmit()">
+                    <input id="formname" name="name" type="text" placeholder="Name">
+                    <input id="email" name="mail" type="text" placeholder="Email" ><br>
+                    <textarea name="textarea" id="textarea" cols="100" rows="10" placeholder="Your message Here .."></textarea><br>
+                    <input type="submit" value="Submit">
                 </form> 
             </div>
         </div>
-
+        <script>
+            function formSubmit(){
+                var nameInput = document.forms["myform"]["name"].value;
+                if(nameInput == ""){
+                    alert("Fill In your Name");
+                    event.preventDefault()
+                    return;
+                }
+               else{
+                 alert(nameInput+" we have received your message. Thank you for reaching out to us.");
+                 event.preventDefault();
+                 return;
+                }                
+            }
+        </script>
         <!-- footer -->
         <div class="row">
             <div class="footer">
