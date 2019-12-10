@@ -61,8 +61,7 @@ html, body{
     text-transform: uppercase;
 }
 .portoimage{
-    float: left;
-    margin: 1.5%;
+    width: auto;
 }
 .portoimage::after{
     content: "";
