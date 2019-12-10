@@ -26,12 +26,12 @@ $(document).ready(function (){
     }, function(){
         $(this).css("opacity", "1");
     });
-    event.preventDefault();
+    
     $(".text").hover(function(){
         $(this).css("position", "absolute");
         $(this).css("top", "50%");
         $(this).css("left", "50%");
         $(this).css("color","#fff")
     });
-    event.preventDefault();
+    event.preventDefault();    
 })
