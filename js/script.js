@@ -31,7 +31,8 @@ $(document).ready(function (){
         $(this).css("position", "absolute");
         $(this).css("top", "50%");
         $(this).css("left", "50%");
-        $(this).css("color","#fff")
+        $(this).css("color","#fff");
+        $(this).css("font-size", "40px")
     });
     event.preventDefault();    
 })
