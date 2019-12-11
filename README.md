@@ -7,10 +7,6 @@ Delani Studio is a responsive, interactive and an Informative website dealing th
 Development
 # WEBSITE LINK
 Here is the link to the live website https://joekahora.github.io/delani-studio/
-# KNOWN BUGS
-There are none as of now.
-# FUTURE FEATURE
-We will add new feature like "subscribe to newsletter" feature
 # CONTACT
 You can reach me through my email which is: gachau.joel@gmail.com
 # LICENSE
@@ -35,4 +31,3 @@ your copyrighted material outside their relationship with you.
 
   Conveying under any other circumstances is permitted solely under
 the conditions stated below.  Sublicensing is not allowed; section 10
-makes it unnecessary
