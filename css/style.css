@@ -5,9 +5,10 @@ html, body{
     width: 100%;
 } 
 .logo{
-    width: 100%;
+    /* width: 500px; */
+    height: 500px;
     background-image: url(../assets/backgrounds/h_img.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     white-space: normal;
     text-transform: uppercase;
@@ -15,10 +16,13 @@ html, body{
     color: #fff;
 }
 .logo img{
-    padding-bottom: 10px;
+    padding-bottom: 100px;
+}
+.welcome{
+    font-size: 28px;
 }
 .mousepointer{
-    padding-top: 10%;
+    padding-top: 25px;
 }
 .aboutus{
     text-align: center;
@@ -46,6 +50,9 @@ html, body{
     content: "";
     clear: both;
     display: table;
+}
+.design,.development,.productmanagement{
+    padding-left: 100px;
 }
 .show-hidden{
     display: none;
@@ -94,7 +101,7 @@ html, body{
     color: #fff;
 }
 #textarea{
-    margin-top: 5%;
+    margin-top: 50px;
     background: none;    
 }
 #textarea::placeholder{
@@ -102,11 +109,13 @@ html, body{
 }
 .footer{
     padding-top: 50px;
+    padding-left: 250px;
 }
 .footer p{
     text-align: center;
-    margin-left: 550px;
+    /* margin-left: 50px; */
 }
 .socialmediaicons{
-    margin-left: 550px;
+    align-items: center;
+    /* margin-left: 50px; */
 }
